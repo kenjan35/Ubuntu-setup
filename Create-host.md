@@ -16,7 +16,8 @@ We use Alpine because it contains busybox by default.
 ```sh
 FROM alpine:3.20.10
 
-RUN apk add --no-cache iputils \
+RUN apk add --no-cache busybox-extras \
+  iputils \
   iproute2 \
   tcpdump \
   curl
