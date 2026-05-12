@@ -46,3 +46,13 @@ docker ps
 ```
 
 *Note: You must remove all container before delete image.*
+
+## Use it in GNS3
+
+1- Run:
+
+```sh
+gns3
+```
+
+2- Go to File -> Preferences -> Docker -> Docker containers -> New -> Follow steps
