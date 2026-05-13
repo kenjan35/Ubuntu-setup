@@ -18,6 +18,6 @@ RUN apk add --no-cache frr \
 CMD ["/bin/sh"]
 ```
 
-*Note: iproute2 contains: ip, ss(socket statics), tc(trafiic control), bridge(bridge configuration), ip rule*
-*iputils contains: ping, arping, tracepath, clockdiff*
+*Note: iproute2 contains: ip, ss(socket statics), tc(trafiic control), bridge(bridge configuration), ip rule.*
+*iputils contains: ping, arping, tracepath, clockdiff.*
 *tcpdump: network packet capture tool*
