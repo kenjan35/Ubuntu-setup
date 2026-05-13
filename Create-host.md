@@ -56,3 +56,17 @@ gns3
 ```
 
 2- Go to File -> Preferences -> Docker -> Docker containers -> New -> Follow steps
+
+## Add inet addr
+
+To add an IP address to interface eth0:
+
+```sh
+sudo ip addr add ip_address/mask dev eth0
+```
+
+Activate the interface:
+
+```sh
+sudo ip link set eth0 up
+```
