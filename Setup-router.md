@@ -53,12 +53,19 @@ ip link set br0 up
 Create vxlan in eth0
 
 ```sh
-ip link add vxlan10 type vxlan ip 10 dev eth0 remote ip_address_other/mask dstport 4789
+/sbin/ip link add vxlan10 type vxlan id 10 dev eth0 remote ip_address_other/mask dstport 4789
 ```
+*Note: We need to specify /sbin/ip because busybox contains an old version and incomplete, which can't set id into 10 and dstport into 4789.*
 
 Activate vxlan10 interface
 
 ```sh
 ip link set vxlan10 up
 ip link set vxlan10 master br0
+```
+
+To show some details about interface
+
+```sh
+ip -d show link
 ```
